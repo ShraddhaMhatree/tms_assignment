@@ -110,7 +110,8 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               'Hot',
                               style: TextStyle(
-                                  color: Colors.grey,
+                                  color: _value == 0 ? Colors.white : Colors.grey,
+                                  // color: Colors.grey,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
@@ -132,7 +133,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               'Trend',
                               style: TextStyle(
-                                  color: Colors.grey,
+                                  color: _value == 1 ? Colors.white : Colors.grey,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
@@ -159,7 +160,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               'Dog',
                               style: TextStyle(
-                                  color: Colors.grey,
+                                  color: _value == 4 ? Colors.white : Colors.grey,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
@@ -186,7 +187,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               'Private',
                               style: TextStyle(
-                                  color: Colors.grey,
+                                  color: _value == 2 ? Colors.white : Colors.grey,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
@@ -213,7 +214,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               'Cat',
                               style: TextStyle(
-                                  color: Colors.grey,
+                                  color: _value == 3 ? Colors.white : Colors.grey,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
