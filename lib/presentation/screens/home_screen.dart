@@ -38,7 +38,11 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  height: 20,
+                  height: 10,
+                ),
+                Icon(Icons.list),
+                SizedBox(
+                  height: 10,
                 ),
                 Text(
                   'Pets near you',
