@@ -93,104 +93,131 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 2,
+                  height: 10,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ChoiceChip(
-                      selected: _value == 0,
-                      label: Text(
-                        'Hot',
-                        style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.normal),
+                Container(
+                  height: 30,
+                  child: ListView(
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(right: 10),
+                        child: ChoiceChip(
+                          selected: _value == 0,
+                          label: Text(
+                            'Hot',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.normal),
+                          ),
+                          backgroundColor: Colors.grey.shade200,
+                          selectedColor: Colors.pink,
+                          onSelected: (bool selected) {
+                            setState(() {
+                              _value = selected ? 0 : null;
+                            });
+                          },
+                        ),
                       ),
-                      backgroundColor: Colors.grey.shade200,
-                      selectedColor: Colors.pink,
-                      onSelected: (bool selected) {
-                        setState(() {
-                          _value = selected ? 0 : null;
-                        });
-                      },
-                    ),
-                    ChoiceChip(
-                      selected: _value == 1,
-                      label: Text(
-                        'Trend',
-                        style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.normal),
+                      Padding(
+                        padding: EdgeInsets.only(right: 10),
+                        child: ChoiceChip(
+                          selected: _value == 1,
+                          label: Text(
+                            'Trend',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.normal),
+                          ),
+                          backgroundColor: Colors.grey.shade200,
+                          selectedColor: Colors.pink,
+                          onSelected: (bool selected) {
+                            setState(() {
+                              _value = selected ? 1 : null;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => OtherScreen()),
+                              );
+                            });
+                          },
+                        ),
                       ),
-                      backgroundColor: Colors.grey.shade200,
-                      selectedColor: Colors.pink,
-                      onSelected: (bool selected) {
-                        setState(() {
-                          _value = selected ? 1 : null;
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => OtherScreen()),
-                          );
-                        });
-                      },
-                    ),
-                    ChoiceChip(
-                      selected: _value == 4,
-                      label: Text(
-                        'Dog',
-                        style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.normal),
+                      Padding(
+                        padding: EdgeInsets.only(right: 10),
+                        child: ChoiceChip(
+                          selected: _value == 4,
+                          label: Text(
+                            'Dog',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.normal),
+                          ),
+                          backgroundColor: Colors.grey.shade200,
+                          selectedColor: Colors.pink,
+                          onSelected: (bool selected) {
+                            setState(() {
+                              _value = selected ? 4 : null;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => OtherScreen()),
+                              );
+                            });
+                          },
+                        ),
                       ),
-                      backgroundColor: Colors.grey.shade200,
-                      selectedColor: Colors.pink,
-                      onSelected: (bool selected) {
-                        setState(() {
-                          _value = selected ? 4 : null;
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => OtherScreen()),
-                          );
-                        });
-                      },
-                    ),
-                    ChoiceChip(
-                      selected: _value == 2,
-                      label: Text(
-                        'Private',
-                        style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.normal),
+                      Padding(
+                        padding: EdgeInsets.only(right: 10),
+                        child: ChoiceChip(
+                          selected: _value == 2,
+                          label: Text(
+                            'Private',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.normal),
+                          ),
+                          backgroundColor: Colors.grey.shade200,
+                          selectedColor: Colors.pink,
+                          onSelected: (bool selected) {
+                            setState(() {
+                              _value = selected ? 2 : null;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => OtherScreen()),
+                              );
+                            });
+                          },
+                        ),
                       ),
-                      backgroundColor: Colors.grey.shade200,
-                      selectedColor: Colors.pink,
-                      onSelected: (bool selected) {
-                        setState(() {
-                          _value = selected ? 2 : null;
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => OtherScreen()),
-                          );
-                        });
-                      },
-                    ),
-                    ChoiceChip(
-                      selected: _value == 3,
-                      label: Text(
-                        'Cat',
-                        style: TextStyle(
-                            color: Colors.grey, fontWeight: FontWeight.normal),
+                      Padding(
+                        padding: EdgeInsets.only(right: 10),
+                        child: ChoiceChip(
+                          selected: _value == 3,
+                          label: Text(
+                            'Cat',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.normal),
+                          ),
+                          backgroundColor: Colors.grey.shade200,
+                          selectedColor: Colors.pink,
+                          onSelected: (bool selected) {
+                            setState(() {
+                              _value = selected ? 3 : null;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => OtherScreen()),
+                              );
+                            });
+                          },
+                        ),
                       ),
-
-                      backgroundColor: Colors.grey.shade200,
-                      selectedColor: Colors.pink,
-                      onSelected: (bool selected) {
-                        setState(() {
-                          _value = selected ? 3 : null;
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => OtherScreen()),
-                          );
-                        });
-                      },
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Container(
                   height: 280,
