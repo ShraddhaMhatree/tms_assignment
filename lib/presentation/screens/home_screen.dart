@@ -105,11 +105,14 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(right: 10),
                         child: ChoiceChip(
                           selected: _value == 0,
-                          label: Text(
-                            'Hot',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.normal),
+                          label: Padding(
+                            padding: EdgeInsets.all(3),
+                            child: Text(
+                              'Hot',
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.normal),
+                            ),
                           ),
                           backgroundColor: Colors.grey.shade200,
                           selectedColor: Colors.pink,
@@ -124,11 +127,14 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(right: 10),
                         child: ChoiceChip(
                           selected: _value == 1,
-                          label: Text(
-                            'Trend',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.normal),
+                          label: Padding(
+                            padding: EdgeInsets.all(3),
+                            child: Text(
+                              'Trend',
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.normal),
+                            ),
                           ),
                           backgroundColor: Colors.grey.shade200,
                           selectedColor: Colors.pink,
@@ -148,11 +154,14 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(right: 10),
                         child: ChoiceChip(
                           selected: _value == 4,
-                          label: Text(
-                            'Dog',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.normal),
+                          label: Padding(
+                            padding: EdgeInsets.all(3),
+                            child: Text(
+                              'Dog',
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.normal),
+                            ),
                           ),
                           backgroundColor: Colors.grey.shade200,
                           selectedColor: Colors.pink,
@@ -172,11 +181,14 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(right: 10),
                         child: ChoiceChip(
                           selected: _value == 2,
-                          label: Text(
-                            'Private',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.normal),
+                          label: Padding(
+                            padding: EdgeInsets.all(3),
+                            child: Text(
+                              'Private',
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.normal),
+                            ),
                           ),
                           backgroundColor: Colors.grey.shade200,
                           selectedColor: Colors.pink,
@@ -196,11 +208,14 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(right: 10),
                         child: ChoiceChip(
                           selected: _value == 3,
-                          label: Text(
-                            'Cat',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.normal),
+                          label: Padding(
+                            padding: EdgeInsets.all(3),
+                            child: Text(
+                              'Cat',
+                              style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.normal),
+                            ),
                           ),
                           backgroundColor: Colors.grey.shade200,
                           selectedColor: Colors.pink,
@@ -216,6 +231,7 @@ class _HomePageState extends State<HomePage> {
                           },
                         ),
                       ),
+
                     ],
                   ),
                 ),
